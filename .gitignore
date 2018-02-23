@@ -1,0 +1,12 @@
+*.class
+Netten
+References
+node_modules
+.idea
+*.log
+Logs
+*test.*
+*.DS_Store
+BeniOku
+*Predis*
+Documents
