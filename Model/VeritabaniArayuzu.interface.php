@@ -23,7 +23,8 @@ inheritance
 
 is the notion to extend from something, an optionnaly add some new feature or override some existing feature (to do differently). But using inheritance, you share a big part of code with the parent. You are a parent + some other things.
 
-interface is representing some abilities (we says a class is implementing an interface to says that it has these abilities). An interface can be implemented by 2 classes which are completely different and do not share their code (except for methods they implements). When A and B are implementing interface C, A is not a B and B is not a A.
+interface is representing some abilities (we says a class is implementing an interface to says that it has these abilities). An interface can be implemented by 2 classes which are completely different and do not share their code (except for methods they implements).
+ When A and B are implementing interface C, A is not a B and B is not a A.
 
 And one of the reason for interface is indeed to allow programmer to do the same as they could do with multi-inheritance, but without multi-inheritance problems.
 

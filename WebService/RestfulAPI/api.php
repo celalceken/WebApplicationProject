@@ -18,7 +18,7 @@ require_once (__DIR__.'/../../Model/OgrenciGoruntuleJSON.class.php');
 		private $db = NULL;
 	
 		public function __construct(){
-			parent::__construct();				// Init parent contructor
+			//parent::__construct();				// Init parent contructor -- we are not using this part
 			include(__DIR__.'/../../Include/DatabaseConnection.php');
 			$this->db=$veritabaniBaglantisi;// Initiate Database connection
 		}
@@ -141,7 +141,7 @@ require_once (__DIR__.'/../../Model/OgrenciGoruntuleJSON.class.php');
 
 	}
 	
-	// Initiiate Library
+	// Initiate Library
 	
 	$api = new API;
 	$api->processApi();

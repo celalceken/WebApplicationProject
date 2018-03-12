@@ -75,15 +75,22 @@ class Ogrenci extends \cc\Kisi
 
 
 
-        /* One important principle of OOP is that a class should do one thing, and it should do it well.
+        /*
 
-             With this in mind, conditional statements should be a red flag indicating that your class is trying to do too many different things. This is where polymorphism comes in.
+        Kod tekrar kullanımı artırılır. Görüntüleyici sınıflar başka modüller tarafından da rahtlıkla kullanılabilir.
 
-         In our example, it is clear that there are two tasks presented: managing articles and formatting their data. In this tutorial, we will refactor our formatting code into a new set of classes and discover how easy it is use polymorphism.
+        One important principle of OOP is that a class should do one thing, and it should do it well.
 
-         Polymorphism is an elegant way to escape from ugly conditional statements in your OOP code. It follows the principle of keeping your components separate, and is an integral part of many design patterns.
+        With this in mind, conditional statements should be a red flag indicating that your class is trying to do too
+        many different things. This is where polymorphism comes in.
 
-         Kod tekrar kullanımı geliştirilir. Yazıcı sınıfları başka modüller de de rahtça kullanılabilir.
+         In our example, it is clear that there are two tasks presented: managing articles and formatting their data.
+        In this tutorial, we will refactor our formatting code into a new set of classes and discover how easy it is use polymorphism.
+
+         Polymorphism is an elegant way to escape from ugly conditional statements in your OOP code. It follows the principle of
+        keeping your components separate, and is an integral part of many design patterns.
+
+
          */
 
     }

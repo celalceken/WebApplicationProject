@@ -7,7 +7,6 @@
  */
 
 require_once(__DIR__ . '/../Classes/Logger.class.php');
-//require_once(__DIR__ . '/../Classes/DatabaseException.class.php');
 // __DIR__ dosyanin bulunduğu dizin yolu döner.
 
 try {

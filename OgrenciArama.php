@@ -1,5 +1,5 @@
 <?php
-require_once 'Guvenlik/PersonelDenetim.php';
+require_once (__DIR__.'/Guvenlik/PersonelDenetim.php'); //Site içerisindeki tüm sayfalara eklenmeli...
 
 ?>
 

@@ -8,7 +8,7 @@
 
 
 require_once(__DIR__.'/Model/AkademikPersonel.class.php'); // Session icerisindeki nesnenin oluşturulabilmesi için gerekli
-require_once 'Guvenlik/PersonelDenetim.php'; //Site içerisindeki tüm sayfalara eklenmeli...
+require_once (__DIR__.'/Guvenlik/PersonelDenetim.php'); //Site içerisindeki tüm sayfalara eklenmeli...
 require_once (__DIR__.'/Model/ModelFactory.class.php');
 require_once (__DIR__.'/Model/AkademikPersonelGoruntuleJSON.class.php');
 
@@ -63,11 +63,16 @@ require_once (__DIR__.'/Model/AkademikPersonelGoruntuleJSON.class.php');
                     <li><a href="Include/Cikis.php">  <span class="glyphicon glyphicon-log-out" style="alignment: "></span> &nbsp; Çıkış</a></li>
                 </ul>
             </li>
-
         </ul>
-
     </div>
 </nav>
+
+<div class="well" style="background-color:#563D7C; color: #FFFFFF; margin-left: 0px; border-left-width: 2px;
+        border-left-color: #191906; border-right-width: 2px; border-right-color: #191906">
+        <br> <br> <br>
+        <h2 style="text-align: left">Öğrenci Bilgi Sistemi Uygulaması</h2>
+        <p class="lead">Güvenli Olmayan Öğrenci Bilgi Sistemi Uygulaması</p>
+</div>
 
 <div class="container">
     <!--<div class="page-header">
@@ -112,11 +117,10 @@ require_once (__DIR__.'/Model/AkademikPersonelGoruntuleJSON.class.php');
 
 </div>
 
-<footer id="footer" class="footer">
-    <div class="container">
-        <p class="text-muted">Öğrenci Bilgi Sistemi</p>
-    </div>
-</footer>
+<div class="navbar navbar-default navbar-fixed-bottom" style="text-align: left;">
+    Copyright © 2018 Sakarya University, Internet of Things Research Laboratory.
+
+</div>
 <!--<script src="https://cdn.socket.io/socket.io-1.0.0.js"></script>-->
 <script>
 

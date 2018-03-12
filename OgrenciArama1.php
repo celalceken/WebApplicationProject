@@ -110,31 +110,12 @@ $ogrenciler=$query->fetchAll();
 					//$("#mesaj3").slideDown("1500");
 					if(data.sonuc==1)
 					{	alert("Silme işlemi başarılı !!!");
-						//if ($("#mesaj3").is(":hidden"))
-						//{
-						// $("#mesaj3").slideDown("1500");
-						// $('#mytable').hide();
-						// $('#mesaj4').hide();
-
-						//}
-						//else
-						//{
-						//$("#mesaj2").slideUp("1500");
-						//}
-
 
 						exit(0);
 					}else
 					{
 						alert("Silme işlemi başarılı değil !!!");
-						//if ($("#mesaj2").is(":hidden"))
-						//{
-						//$("#mesaj4").slideDown("1500");
-						//}
-						//else
-						//{
-						//$("#mesaj2").slideUp("1500");
-						//}
+
 
 						exit(0);
 					}
