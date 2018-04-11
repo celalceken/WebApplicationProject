@@ -126,8 +126,8 @@
 				<td>
 					<label for="soyadi" ><strong>Soyadi</strong></label>
 				</td>
-				<td>                                                                                                 <!-- <script>alert(document.cookie);</script>-->
-					<input id="soyadi" name="soyadi" type="text" class="input-mini" placeholder="Öğrenci Soyadını Giriniz" maxlength="15" > //Use zap to by-pass this filter
+				<td>   <!-- <script>alert(document.cookie);</script>-->
+					<input id="soyadi" name="soyadi" type="text" class="input-mini" placeholder="Öğrenci Soyadını Giriniz" maxlength="15" >
 				</td>
 			</tr>
 			<tr>
