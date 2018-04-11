@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<Duyurular>
+<?xml version="1.0" encoding="utf-8"?>
+<duyurular>
 
     <duyuru>
-        <duyuruNo>2</duyuruNo>
-        <duyuruAyrinti>Duyuru  </duyuruAyrinti>
+        <duyuruNo>1</duyuruNo>
+        <duyuruAyrinti>Duyuru Ayrıntısı </duyuruAyrinti>
+
     </duyuru>
-    <!--<duyuru>
-        <duyuruNo>4</duyuruNo>
-        <duyuruAyrinti>Duyurular 4</duyuruAyrinti>
-    </duyuru>-->
-</Duyurular>
+    <duyuru>
+        <duyuruNo>2</duyuruNo>
+        <duyuruAyrinti>Duyuru Ayrıntısı 2</duyuruAyrinti>
+
+    </duyuru>
+
+</duyurular>

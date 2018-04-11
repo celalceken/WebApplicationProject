@@ -92,13 +92,10 @@ require_once (__DIR__.'/Model/AkademikPersonelGoruntuleJSON.class.php');
             <div class="panel panel-default">
                 <div class="panel-heading">Duyurular</div>
 
-                <div class="panel-body" id="messages1" style="max-height: 200px">
-                    <!--<ol>
-                        <li>Duyuru1</li>
-                        <li> </li>
-                    </ol>-->
+                <div class="panel-body" id="duyurular" style="height: 300px; overflow-x: hidden; overflow-y: scroll; text-align: justify;">
+
                     <!--Library/NodeJS klasöründeki sunucu başlatılmalı-->
-                    <div id="duyurular"></div>
+
 
 
                 </div>
@@ -121,27 +118,33 @@ require_once (__DIR__.'/Model/AkademikPersonelGoruntuleJSON.class.php');
     Copyright © 2018 Sakarya University, Internet of Things Research Laboratory.
 
 </div>
-<!--<script src="https://cdn.socket.io/socket.io-1.0.0.js"></script>-->
+
+<script src="Library/NodeJS/node_modules/socket.io-client/dist/socket.io.js"></script>
 <script>
 
     $(function()
     {
+
+        //Öncelikle /Library/NodeJS/Server.js   başlatılmalı
+
         // Mesajlaşma....
 
-       /* var socket = io.connect('http://localhost:8000');
-        // on every message recived we print the new datas inside the #container div
-        socket.on('notification', function (data) {
-            //alert (data);
-            // convert the json string into a valid javascript object
-            var data = JSON.parse(data);
-            //alert (_data);
-            // $('#duyurular').append(new Date());
+        var socket = io.connect('http://192.168.56.1:8080'); //Server.js nin soket adresi verilmeli
+        socket.on('yeniDuyuru', function (gelenDuyuru) {
+
+            alert(gelenDuyuru);
+
+            // JSON nesnesine dönüştür
+            var myObj = JSON.parse(gelenDuyuru);
+
+
+            alert(myObj.duyurular.duyuru[0].duyuruNo);
+
+
             $('#duyurular').empty();
-            /!*$.each(data, function(i, item) {
-             $('#duyurular').append(i);
-             });​*!/
-            $('#duyurular').append(data.Duyurular.duyuru.duyuruNo);
-            $('#duyurular').append(data.Duyurular.duyuru.duyuruAyrinti);
+            $.each(myObj.duyurular.duyuru, function(index) {
+                $('#duyurular').append(myObj.duyurular.duyuru[index].duyuruNo+' '+myObj.duyurular.duyuru[index].duyuruAyrinti+':'+new Date()+'<hr>');
+            });
 
         });
 
@@ -162,7 +165,7 @@ require_once (__DIR__.'/Model/AkademikPersonelGoruntuleJSON.class.php');
             $('#m').val('');
             }
             //return false;
-        });*/
+        });
 
 
 
